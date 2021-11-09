@@ -5,6 +5,7 @@ export const MediaComponent = ({ handleDrag, handleOnClick, refVideo }) => {
   return (
     <video
       id="sample-video"
+      className="sample-video"
       width="200"
       height="300"
       draggable="true"

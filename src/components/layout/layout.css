@@ -1,20 +1,21 @@
-/* Split the screen in half */
 .top {
   height: 50%;
   width: 50%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
-  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
 }
 
 .bottom {
   height: 50%;
   width: 50%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   bottom: 0;
-  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .left {
@@ -25,11 +26,24 @@
   right: 0;
 }
 
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.right .sample-video {
+  display: inline-block;
+  align-self: flex-end;
+}
+
+.top .sample-video {
+  flex: inherit;
+}
+
+.bottom .sample-video {
+  flex: inherit;
+}
+
+.left .sample-video {
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.sample-video {
+  border: 2px solid black;
 }

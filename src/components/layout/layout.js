@@ -15,38 +15,26 @@ export const LayoutComponent = ({
         className="top left"
         onDrop={(event) => handleDrop(event)}
         onDragOver={(event) => handleOnDropOver(event)}
-      >
-        {/* <div className="centered">
-          <h2>Jane Flex</h2>
-          <p>Some text.</p>
-        </div> */}
-      </div>
+      ></div>
 
       <div
         className="top right"
         onDrop={(event) => handleDrop(event)}
         onDragOver={(event) => handleOnDropOver(event)}
-        align="right"
-      >
-        {/* <div className="centered">
-          <h2>John Doe</h2>
-          <p>Some text here too.</p>
-        </div> */}
-      </div>
+      ></div>
 
       <div
         className="bottom left"
         onDrop={(event) => handleDrop(event)}
         onDragOver={(event) => handleOnDropOver(event)}
-      >
-        {/* <div className="centered">
-          <h2>Jane Flex2</h2>
-          <p>Some text.</p>
-        </div> */}
-      </div>
+      ></div>
 
-      <div className="bottom right">
-        <div className="child"></div>
+      <div
+        className="bottom right"
+        onDrop={(event) => handleDrop(event)}
+        onDragOver={(event) => handleOnDropOver(event)}
+        align="right"
+      >
         <MediaComponent handleDrag={handleDrag} refVideo={refVideo} />
       </div>
     </>

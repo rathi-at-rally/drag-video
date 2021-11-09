@@ -14,7 +14,9 @@ export const DragContainer = () => {
   function handleDrop(event) {
     event.preventDefault();
     const data = event.dataTransfer.getData("text");
-    event.target.appendChild(document.getElementById(data));
+    try {
+      event.target.appendChild(document.getElementById(data));
+    } catch {}
   }
 
   function handleOnDropOver(event) {
